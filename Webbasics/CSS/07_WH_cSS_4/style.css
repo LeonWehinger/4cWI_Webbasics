@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.containerLinks{
+    display: flex;
+    height: 30vh;
+    background: white;
+    outline: black solid 1px;
+    margin: 10px;
+}
+.BlueBox{
+    position: absolute;
+    background-color: blue;
+    height: 20vh;
+    width: 20vh;
+    align-self: center;
+    margin-left: 40px;
+}
+.GreenBox{
+    position: absolute;
+    right: 0px;
+    margin: 50px;
+    background-color: green;
+    height: 20vh;
+    width: 20vh;
+    align-self: center;
+
+}
