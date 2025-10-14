@@ -1,0 +1,9 @@
+Erstelle ein API für Cars (CarAPI) mit folgenden Methoden
+
+
+getAllCars():Car[]
+findCars(searchText:string):Car[]
+
+
+Erstelle 2 konkrete Implementierungen. 1x für Autogeschäft1 und einmal für ein anderes.
+Beide API's liefern unterschiedliche Werte zurück
