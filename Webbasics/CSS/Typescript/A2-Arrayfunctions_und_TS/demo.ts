@@ -10,26 +10,24 @@ let car2: Car = {brand: "Audi", model: "A4", price: 200000, year: 2018};
 let car3: Car = {brand: "Mercedes", model: "C63", price: 300000, year: 2018};
 let CarList: Car[] = [car1, car2, car3];
 
-function getTotalPrice(car: Car[]):number {
-    let priceSum: number = 0;
-    CarList.forEach(car => priceSum += car.price);
-    return priceSum;
-}
-
-function pintCars(car: Car[]):void {
-    CarList.forEach(car => console.log(car.brand + " " + car.model + " " + car.price + " " + car.year));
-}
-
-function getExpensiveCars(car: Car[], minPrice:number){
-    CarList.forEach(car => {if (car.price >= minPrice) console.log(car.brand + " " + car.model + " " + car.price + " " + car.year)});
-}
 
 const getExpensiveCars2: Car[] = CarList.filter((car: Car) =>
     car.price >= 200000
 );
 
+
 const getTotalPrice2 = CarList.reduce((sum: number, car: Car) => sum + car.price, 0);
 
 
-console.log(getTotalPrice2);
+const CarArray = CarList.map((car: Car) => car.brand);
 
+
+const sortedCarList = CarList.sort((car1: Car, car2: Car) => car2.price - car1.price);
+
+const foundCar = CarList.find((car: Car) => car.brand === "BMW");
+
+const someCar = CarList.some((car: Car) => car.brand === "BMW");
+
+const everyCar = CarList.every((car: Car) => car.year === 2018);
+
+console.log(everyCar);
