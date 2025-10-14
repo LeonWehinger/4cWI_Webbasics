@@ -24,6 +24,7 @@ const CarArray = CarList.map((car: Car) => car.brand);
 
 const sortedCarList = CarList.sort((car1: Car, car2: Car) => car2.price - car1.price);
 
+// @ts-ignore
 const foundCar = CarList.find((car: Car) => car.brand === "BMW");
 
 const someCar = CarList.some((car: Car) => car.brand === "BMW");
