@@ -1,5 +1,6 @@
 import List, {type nameProp} from "./A2_components/List.tsx";
 import Button from "./A2_components/Button.tsx";
+import Card from "./A2_components/Card.tsx";
 
 function A2_App() {
 
@@ -21,6 +22,10 @@ function A2_App() {
 
             <div>
                 <Button text={"Sendar"} onClick={() => console.log("clicked")}/>
+            </div>
+
+            <div className="flex justify-center">
+                <Card name={"Nejo Nejo"} work={"Professional Valorant gamer"}/>
             </div>
         </>
     )
