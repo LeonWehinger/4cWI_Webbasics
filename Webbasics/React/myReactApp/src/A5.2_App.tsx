@@ -1,5 +1,6 @@
 import {useState} from "react";
 import LightCard from "./A5.2_components/LightCard.tsx";
+import Card from "./test_components/Card.tsx";
 
 function A5_2_App() {
 
@@ -10,6 +11,7 @@ function A5_2_App() {
         <>
             <div>
                 <LightCard state={state} onClick1={() => setState(!state)}/>
+                <Card name=" leon" initialAge={15}></Card>
             </div>
 
         </>
