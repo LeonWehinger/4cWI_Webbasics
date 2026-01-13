@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 export type Props = {
     id?: number;
     title: string;
@@ -5,13 +7,17 @@ export type Props = {
 };
 
 export default function Todo({title, completed}: Props) {
+
+    const [complete, setComplete] = useState(completed);
+
+
     return (
         <div className="border border-black grid grid-cols-[1fr_180px_auto] items-center gap-2 m-1 px-2">
             <div className="truncate">{title}</div>
             <div className="text-center">
-                {completed ? "Completed" : "Not Completed"}
+                {complete ? "Completed" : "Not Completed"}
             </div>
-            <input type="checkbox" checked={completed} onChange={() => {}}/>
+            <input type="checkbox" checked={complete} onChange={() => setComplete(!complete)}/>
         </div>
     );
 }
