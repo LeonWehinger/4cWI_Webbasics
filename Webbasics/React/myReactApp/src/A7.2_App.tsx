@@ -5,7 +5,7 @@ import PersonListData from "./A7.2_components/PersonAPI.ts";
 
 export default function A7_1_App() {
 
-    const [PersonList, setPersonList] = useState<PersonProps[]>(PersonListData);
+    const [PersonList] = useState<PersonProps[]>(PersonListData);
 
 
 
