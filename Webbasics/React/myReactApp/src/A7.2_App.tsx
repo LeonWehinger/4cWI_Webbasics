@@ -7,9 +7,7 @@ export default function A7_1_App() {
 
     const [PersonList, setPersonList] = useState<PersonProps[]>(PersonListData);
 
-    useEffect(() => {
-        setPersonList(PersonListData)
-    }, []);
+
 
 
     return (
