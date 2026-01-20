@@ -9,6 +9,6 @@ export default function Person({name, age}: PersonProps) {
 
 
     return (
-        <div>{name} {age}</div>
+        <div>{name}, {age}</div>
     );
 }

@@ -18,3 +18,5 @@ const PersonAPI=
   { "id": 14, "name": "Nina Berger", "age": 21 },
   { "id": 15, "name": "Sebastian Leitner", "age": 28 }
 ]
+
+export default PersonAPI;
