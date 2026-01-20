@@ -1,10 +1,24 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import A8_App from "./A8_App.tsx"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
+import A5_2_App from "./A5.2_App.tsx";
+import A8_App from "./A8_App.tsx";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <A8_App />
-  </StrictMode>,
-)
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <A5_2_App/>,
+    },
+    {
+        path: "/A8",
+        element: <A8_App/>,
+    },
+]);
+
+const root = document.getElementById("root");
+
+ReactDOM.createRoot(root).render(
+    <RouterProvider router={router} />,
+);
+
