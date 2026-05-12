@@ -15,6 +15,7 @@ class MyGame extends Game {
   rect2 = new Rect(200, 50, 200, 100, "#1385d9");
   rect3 = new Rect(50, 300, 50, 50, "#37d81c");
   rect4 = new Rect(10, 130, 10, 100, "#7d0c98"); */
+
   oval1 = new Oval(500, 100, 20, "#E3401E", MovementTypeX.LEFT, MovementTypeY.UP);
   oval2 = new Oval(200, 200, 20, "#0f529e", MovementTypeX.RIGHT, MovementTypeY.DOWN);
   oval3 = new Oval(700, 300, 20, "#09a615", MovementTypeX.LEFT, MovementTypeY.UP);
