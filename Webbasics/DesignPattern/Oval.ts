@@ -1,11 +1,11 @@
 import { Actor } from "./Actor.js";
 
-enum MovementTypeX{
+export enum MovementTypeX{
     LEFT,
     RIGHT
 }
 
-enum MovementTypeY{
+export enum MovementTypeY{
     UP,
     DOWN
 }
@@ -21,8 +21,8 @@ export class Oval implements Actor {
     private DOWN: boolean;
     private LEFT: boolean;
     private RIGHT: boolean;
-    private SartingX: MovementTypeX;
-    private SartingY: MovementTypeY;
+    private StartingX: MovementTypeX;
+    private StartingY: MovementTypeY;
 
 
 
@@ -31,8 +31,8 @@ export class Oval implements Actor {
         this.y = y;
         this.radius = radius;
         this.color = color;
-        this.SartingX = MovementTypeX;
-        this.SartingY = MovementTypeY;
+        this.StartingX = MovementTypeX;
+        this.StartingY = MovementTypeY;
     }
 
     update(deltaTime: number): void {
