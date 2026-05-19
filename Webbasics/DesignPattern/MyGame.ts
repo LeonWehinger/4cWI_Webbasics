@@ -21,7 +21,7 @@ class MyGame extends Game {
   oval3 = new Oval(700, 300, 20, "#09a615", MovementTypeX.LEFT, MovementTypeY.UP);
   oval4 = new Oval(600, 300, 20, "#c9d33e", MovementTypeX.RIGHT, MovementTypeY.UP);
   oval5 = new Oval(200, 500, 20, "#8a18aa", MovementTypeX.LEFT, MovementTypeY.DOWN);
-  oval6 = new Oval(300, 400, 20, "#27d5ce", MovementTypeX.RIGHT, MovementTypeY.DOWN);
+  oval6 = new Oval(300, 400, 20, "#27d5ce", MovementTypeX.LEFT, MovementTypeY.DOWN );
 
 
   init(): void {
